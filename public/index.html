@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>مفقوداتي | نظام الإبلاغ عن المفقودات والعثور عليها</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">مفقوداتي <span>Lost & Found</span></div>
+  <nav id="nav"></nav>
+</header>
+
+<main id="app">
+  <section class="hero">
+    <div>
+      <span class="eyebrow">منصة موحدة للمفقودات والمعثورات</span>
+      <h1>ساعد شخصًا في العثور على ما فقده</h1>
+      <p>سجّل بلاغًا عن شيء مفقود أو تم العثور عليه، وابحث في البلاغات وتواصل مع أصحابها.</p>
+      <div class="actions">
+        <button class="primary" onclick="go('report')">إضافة بلاغ</button>
+        <button class="ghost" onclick="go('search')">البحث عن مفقود</button>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-icon">⌕</div>
+      <h3>بحث سريع</h3>
+      <p>ابحث بالوصف أو الموقع أو نوع البلاغ.</p>
+      <div class="search-row"><input id="homeSearch" placeholder="مثال: هاتف أسود، الجامعة"><button onclick="searchFromHome()">بحث</button></div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><b id="statReports">0</b><span>بلاغات</span></div>
+    <div><b>24/7</b><span>إتاحة النظام</span></div>
+    <div><b>🔔</b><span>إشعارات المطابقة</span></div>
+    <div><b>✓</b><span>مراجعة المسؤول</span></div>
+  </section>
+
+  <section class="section">
+    <div class="section-title"><div><span class="eyebrow">آخر البلاغات</span><h2>بلاغات حديثة</h2></div><button class="link-btn" onclick="go('search')">عرض الكل ←</button></div>
+    <div id="recentReports" class="grid"></div>
+  </section>
+</main>
+
+<div id="modal" class="modal hidden"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<div id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>
