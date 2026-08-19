@@ -2,16 +2,14 @@
 
 هذه النسخة تعالج وظائف التواصل والحذف والتعديل والإشعارات ولوحة الإدارة وتبقي MongoDB Atlas كقاعدة البيانات.
 
-## التشغيل
-1. انسخ `.env.example` إلى `.env`.
-2. ضع رابط MongoDB Atlas في `MONGODB_URI`.
-3. من مجلد المشروع:
-   `npm.cmd install`
-4. ثم:
-   `npm.cmd start`
-5. افتح `http://localhost:3000`.
 
-حساب المسؤول الافتراضي:
-admin@lostfound.local / Admin@12345
+مشروع ويب متكامل تم تطويره لتسهيل عملية الإبلاغ عن الأغراض المفقودة والعثور عليها بطريقة سهلة ومنظمة.
 
-لا ترسل ملف `.env` للآخرين لأنه يحتوي على بيانات الاتصال بقاعدة البيانات.
+## 🚀 التقنيات المستخدمة (Tech Stack)
+- Backend: Node.js / Express.js
+- Database: MongoDB Atlas
+- Deployment: Render
+
+## 🌐 الرابط الحي للموقع (Live Demo)
+يمكنك تجربة الموقع والاطلاع عليه مباشرة عبر الرابط التالي:
+👉 [رابط الموقع على Render](https://last-found.onrender.com)
