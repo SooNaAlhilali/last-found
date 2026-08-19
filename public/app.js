@@ -412,7 +412,7 @@ function registerPage() {
                     </div>
 
                     <div class="form-actions">
-                        <button>إنشاء الحساب</button>
+                        <button style="background:#0077ff;color:white;">إنشاء الحساب</button>
                     </div>
 
                 </form>
